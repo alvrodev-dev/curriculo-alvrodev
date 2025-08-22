@@ -1,0 +1,155 @@
+/* Fonte e reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4a90e2;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header p {
+    margin: 5px 0;
+    color: #555;
+    font-style: italic;
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    border-left: 5px solid #4a90e2;
+    padding-left: 10px;
+    color: #4a90e2;
+    margin-bottom: 15px;
+}
+
+/* Contato */
+.contato .info p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.contato i {
+    margin-right: 10px;
+    color: #4a90e2;
+}
+
+.contato a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+/* Cartões */
+.card {
+    background-color: #f5f8fa;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Habilidades */
+.habilidades-lista span {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 6px 12px;
+    margin: 5px 5px 0 0;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* Abas */
+.abas {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.aba-btn {
+    flex: 1;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #555;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.aba-btn:hover {
+    background-color: #e0ebf7;
+}
+
+.aba-btn.active {
+    border-bottom: 3px solid #4a90e2;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* Conteúdo das abas */
+.conteudo-aba {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Responsivo */
+@media(max-width: 600px){
+    .container {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .habilidades-lista span {
+        font-size: 0.85em;
+    }
+    .aba-btn {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}

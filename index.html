@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Álvaro José</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/img/eu.jpg" alt="Foto de Álvaro" class="foto">
+            <h1>Álvaro José</h1>
+            <p>Desenvolvedor / Técnico em Informática</p>
+        </header>
+
+        <!-- Contato -->
+        <section class="contato">
+            <h2>Contato</h2>
+            <div class="info">
+                <p><i class="fas fa-envelope"></i> alvarojoseoficial150@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (12) 99165-4586</p>
+                <p><i class="fa-solid fa-location-dot"></i>Piquete-SP</p>
+                <p><i class="fa-solid fa-calendar"></i>Nascido em 02/11/2005</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/alvrodev/" target="_blank">linkedin.com/in/alvrodev</a></p>
+            </div>
+        </section>
+
+        <!-- Experiência -->
+        <section class="experiencia">
+            <h2>Experiência</h2>
+            <div class="card">
+                <h3>Seção de Informática - 5º BI AMV</h3>
+                <p>Atualmente atuo na área de informática no 5º Batalhão de Infantaria Leve (5º BI AMV), realizando manutenção de redes, programação e manutenção de hardwares.</p>
+            </div>
+        </section>
+
+        <!-- Abas: Formações, Cursos e Projetos -->
+        <section class="abas">
+            <button class="aba-btn active" onclick="abrirAba(event, 'formacoes')">Formações</button>
+            <button class="aba-btn" onclick="abrirAba(event, 'cursos')">Cursos Complementares</button>
+            <button class="aba-btn" onclick="abrirAba(event, 'projetos')">Projetos</button>
+        </section>
+
+        <!-- Aba Formações -->
+        <section id="formacoes" class="conteudo-aba">
+            <div class="card">
+                <h3>Univesp - Bacharelado em Tecnologia da Informação</h3>
+                <p>Cursando (2025 - 2029)</p>
+            </div>
+
+            <div class="card">
+                <h3>ETEC - Técnico em Desenvolvimento de Sistemas</h3>
+                <p>Concluído (2021 - 2023)</p>
+            </div>
+        </section>
+
+        <!-- Aba Cursos Complementares -->
+<section id="cursos" class="conteudo-aba" style="display:none;">
+    <div class="card">
+        <h3>Cisco Networking Academy – Escola de Comunicações do Centro de Comunicações e Guerra Eletrônica do Exército</h3>
+        <p>Gerenciamento de Ameaças Cibernéticas (2025)</p>
+    </div>
+    <div class="card">
+        <h3>Cisco Networking Academy – Escola de Comunicações do Centro de Comunicações e Guerra Eletrônica do Exército</h3>
+        <p>Introdução à Cibersegurança (2025)</p>
+    </div>
+    <div class="card">
+        <h3>Cisco Networking Academy – Escola de Comunicações do Centro de Comunicações e Guerra Eletrônica do Exército</h3>
+        <p>Defesa de Redes (2025)</p>
+    </div>
+    <div class="card">
+        <h3>Cisco Networking Academy – Escola de Comunicações do Centro de Comunicações e Guerra Eletrônica do Exército</h3>
+        <p>Ethical Hacker (2024)</p>
+    </div>
+    <div class="card">
+        <h3>Cisco Networking Academy – Escola de Comunicações do Centro de Comunicações e Guerra Eletrônica do Exército</h3>
+        <p>Segurança de Endpoint (2024)</p>
+    </div>
+    <div class="card">
+        <h3>Cisco Networking Academy – Escola de Comunicações do Centro de Comunicações e Guerra Eletrônica do Exército</h3>
+        <p>Python Essentials 1 (2024)</p>
+    </div>
+    <div class="card">
+        <h3>Estágio de Nivelamento de Comando e Controle</h3>
+        <p>12ª Companhia de Comunicações Leve (2025)</p>
+    </div>
+</section>
+
+        <!-- Aba Projetos -->
+        <section id="projetos" class="conteudo-aba" style="display:none;">
+            <div class="card">
+                <h3>SynapTI</h3>
+                <p></p>Desenvolvimento de site institucional. O site apresenta serviços, equipe, contato e soluções de manutenção de computadores, redes e consultoria técnica.</p>
+                <a href="https://alvrodev-dev.github.io/synapti/" target="_blank">Ver projeto</a>
+            </div>
+            <div class="card">
+                <h3>Projeto de chamado senhas com impressão de vias físicas</h3>
+                <p>Concluí um projeto estratégico para o FUSEX – 5º Batalhão de Infantaria Aeromóvel (5º BI AMv): um sistema de chamado de senhas integrado com impressão automática. A solução otimiza o atendimento, agiliza processos internos e garante mais eficiência e organização, aplicando tecnologia segura e inovadora. </p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+            <div class="card">
+                <h3>Projeto sistema de segurança orgânica</h3>
+                <p>Sistema para segurança orgânica, desenvolvido durante experiência no 5º BI AMV.</p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+                <div class="card">
+                <h3>Auxiliador de Estudos</h3>
+                <p>Em 2022 participei da EXPOTIM na ETEC de Cruzeiro, apresentando um projeto desenvolvido com foco em auxiliar nos estudos. A iniciativa foi criada para oferecer mais praticidade, organização e acessibilidade aos alunos, reforçando meu compromisso com tecnologia aplicada à educação. </p>
+                <a href="#" target="_blank">Ver projeto</a>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidades-lista">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Redes</span>
+                <span>Hardware</span>
+                <span>Trabalho em Equipe</span>
+                <span>Resolução de Problemas</span>
+                <span>Organização</span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script para alternar abas -->
+    <script>
+        function abrirAba(evt, nomeAba) {  
+            // Esconde todas as abas
+            const abas = document.getElementsByClassName("conteudo-aba");
+            for (let i = 0; i < abas.length; i++) {
+                abas[i].style.display = "none";
+            }
+
+            // Remove a classe "active" de todos os botões
+            const botoes = document.getElementsByClassName("aba-btn");
+            for (let i = 0; i < botoes.length; i++) {
+                botoes[i].classList.remove("active");
+            }
+
+            // Mostra a aba selecionada
+            document.getElementById(nomeAba).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
